@@ -1,5 +1,5 @@
-EcommerceCRM
-==========
+Ecommerce_CRM
+=======
 
 REQUIREMENTS
 ------------
@@ -10,9 +10,10 @@ REQUIREMENTS
     5.python-mysqldb
     6.django 1.7
 
-#### Installation of EcommerceCRM
+#### Installation of Ecommerce_CRM
     
-    cd path/to/EcommerceCRM/
+    cd path/to/Ecommerce_CRM/
+
     ./install.sh
     
 #### OR
@@ -64,23 +65,23 @@ Run following command in terminal
 and configure it using [this](https://jasvirsinghgrewal91.wordpress.com/2013/06/23/e-mail-server-exim4/)
 
 
-Steps for Installation of EcommerceCRM:
+Steps for Installation of Ecommerce_CRM:
 
-1) Fork the repository [EcommerceCRM]https://github.com/marcrochon/E-commerce_CRM/) and clone the forked repository
+1) Fork the repository [Ecommerce_CRM](https://github.com/GreatDevelopers/Ecommerce_CRM/) and clone the forked repository
     
     $ git clone 'link to your forked repository'
 
-2) Create a database for EcommerceCRM.
+2) Create a database for Ecommerce_CRM.
     
     $ mysql -u root -p
     $ create database ecommerce_crm;
     $ quit
     
-3) Edit settings.py file in EcommerceCRM/src/ecommerce_crm directory. Things to be edited are:
+3) Edit settings.py file in Ecommerce_CRM/src/ecommerce_crm directory. Things to be edited are:
 
 Line No 10 : DATABASES
     
-    NAME : EcommerceCRM
+    NAME : ecommerce_crm
     USER : Your MySQL username
     PASSWORD : Your MySQl password
     

@@ -4,7 +4,7 @@ Models for the useraccounts are..
 from django.db import models
 from django.contrib.auth.models import User
 
-from librehatti.config import _COUNTRY
+from ecommerce_crm.config import _COUNTRY
 
 """
 describes the type of organisation where the user deals
