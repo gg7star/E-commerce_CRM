@@ -30,11 +30,11 @@ echo "Enter DB_USER "
 read  user
 echo "Enter DB_Password "
 read  -s password
-mysql -u$user -e "create database librehatti;" -p$password
+mysql -u$user -e "create database ecommerce_crm;" -p$password
 
-cd src/librehatti/
+cd src/ecommerce_crm/
 
-sed -i -e "s/'NAME': 'db_name'/'NAME': 'librehatti'/g" settings.py
+sed -i -e "s/'NAME': 'db_name'/'NAME': 'ecommerce_crm'/g" settings.py
 sed -i -e "s/'USER': 'db_user'/'USER': '$user'/g" settings.py
 sed -i -e "s/'PASSWORD': 'db_password'/'PASSWORD': '$password'/g" settings.py
 

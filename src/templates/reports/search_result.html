@@ -36,19 +36,19 @@
             {% for item in value.items %}
 
             {% if order and item.0 == 'purchase_order_id' %}
-            <a target="_blank" href = '{% url 'librehatti.prints.views.receipt'%}?order_id={{item.1}}'>Receipt</a> |
-            <a target="_blank" href = '{% url 'librehatti.prints.views.bill'%}?order_id={{item.1}}'>Bill</a> |
+            <a target="_blank" href = '{% url 'ecommerce_crm.prints.views.receipt'%}?order_id={{item.1}}'>Receipt</a> |
+            <a target="_blank" href = '{% url 'ecommerce_crm.prints.views.bill'%}?order_id={{item.1}}'>Bill</a> |
             {% if suspense_flag == 1 %}
-            <a target="_blank" href = '{% url 'librehatti.prints.views.suspense_bill'%}?order_id={{item.1}}&suspense=suspense'>Suspense Bill</a> |
+            <a target="_blank" href = '{% url 'ecommerce_crm.prints.views.suspense_bill'%}?order_id={{item.1}}&suspense=suspense'>Suspense Bill</a> |
             {% endif %}
-            <a href = '{% url 'librehatti.voucher.views.voucher_show' %}?order_id={{item.1}}'>View Voucher</a> |
-            <a target="_blank" href = '{% url 'librehatti.prints.views.tax'%}?order_id={{item.1}}'>Tax Details</a>
+            <a href = '{% url 'ecommerce_crm.voucher.views.voucher_show' %}?order_id={{item.1}}'>View Voucher</a> |
+            <a target="_blank" href = '{% url 'ecommerce_crm.prints.views.tax'%}?order_id={{item.1}}'>Tax Details</a>
 
             {% elif order and item.0 == 'quoted_order_id' %}
-            <a target="_blank" href = '{% url 'librehatti.prints.views.quoted_bill'%}?quoted_order_id={{item.1}}'>Generate Bill</a>
+            <a target="_blank" href = '{% url 'ecommerce_crm.prints.views.quoted_bill'%}?quoted_order_id={{item.1}}'>Generate Bill</a>
 
             {% elif client and item.0 == 'id' %}
-            <a href = '{% url 'librehatti.reports.previous_history.history' %}?user_id={{item.1}}'>View History</a>
+            <a href = '{% url 'ecommerce_crm.reports.previous_history.history' %}?user_id={{item.1}}'>View History</a>
 
             {% else %}
             {{item.1}}
