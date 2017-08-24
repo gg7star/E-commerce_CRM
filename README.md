@@ -1,4 +1,4 @@
-LibreHatti
+EcommerceCRM
 ==========
 
 REQUIREMENTS
@@ -10,9 +10,9 @@ REQUIREMENTS
     5.python-mysqldb
     6.django 1.7
 
-#### Installation of LibreHatti
+#### Installation of EcommerceCRM
     
-    cd path/to/LibreHatti/
+    cd path/to/EcommerceCRM/
     ./install.sh
     
 #### OR
@@ -64,23 +64,23 @@ Run following command in terminal
 and configure it using [this](https://jasvirsinghgrewal91.wordpress.com/2013/06/23/e-mail-server-exim4/)
 
 
-Steps for Installation of LibreHatti:
+Steps for Installation of EcommerceCRM:
 
-1) Fork the repository [LibreHatti](https://github.com/GreatDevelopers/LibreHatti/) and clone the forked repository
+1) Fork the repository [EcommerceCRM]https://github.com/marcrochon/E-commerce_CRM/) and clone the forked repository
     
     $ git clone 'link to your forked repository'
 
-2) Create a database for LibreHatti.
+2) Create a database for EcommerceCRM.
     
     $ mysql -u root -p
-    $ create database librehatti;
+    $ create database ecommerce_crm;
     $ quit
     
-3) Edit settings.py file in LibreHatti/src/librehatti directory. Things to be edited are:
+3) Edit settings.py file in EcommerceCRM/src/ecommerce_crm directory. Things to be edited are:
 
 Line No 10 : DATABASES
     
-    NAME : librehatti
+    NAME : EcommerceCRM
     USER : Your MySQL username
     PASSWORD : Your MySQl password
     
