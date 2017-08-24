@@ -1,5 +1,5 @@
 Ecommerce_CRM
-==========
+=======
 
 REQUIREMENTS
 ------------
@@ -13,6 +13,7 @@ REQUIREMENTS
 #### Installation of Ecommerce_CRM
     
     cd path/to/Ecommerce_CRM/
+
     ./install.sh
     
 #### OR
